@@ -8,6 +8,10 @@ from Models.URLComponents import URLComponents
 from Services.checkAppToken import checkAppToken
 
 app = FastAPI()
+
+@app.get(URLComponents.index)
+def index():
+    return "hello"
         
 @app.post(URLComponents.temperature)
 def temp(request: Request, temperature: Temperature):
@@ -26,3 +30,4 @@ def temp(request: Request, humid: Humid):
         return ResponseJSON(None, ErrorFactory.valueError)
 
     return ResponseJSON(IDResult(1), None)
+
