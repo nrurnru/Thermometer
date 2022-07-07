@@ -9,9 +9,18 @@ struct MainView: View {
             Color.skyBlue.edgesIgnoringSafeArea(.all)
             VStack(alignment: .center, spacing: 60) {
                 VStack {
-                    Text(viewModel.temperatureMessage).padding()
-                    Text(viewModel.humidityMessage).padding()
-                    Text(viewModel.connectionState.description).padding()
+                    HStack {
+                        Image(systemName: "thermometer")
+                        Text(viewModel.temperatureMessage).padding()
+                    }
+                    HStack {
+                        Image(systemName: "humidity")
+                        Text(viewModel.humidityMessage).padding()
+                    }
+                    HStack {
+                        Image(systemName: viewModel.connectionState.isConnected ? "antenna.radiowaves.left.and.right" : "antenna.radiowaves.left.and.right.slash")
+                        Text(viewModel.connectionState.description).padding()
+                    }
                 }
                 .baseFont(size: .middle)
                 HStack {
@@ -97,6 +106,13 @@ class MainViewModel: CommonViewModel {
             .compactMap { $0 }
             .sink { [weak self] _ in
                 self?.isPresentErrorPopup = true
+            }.store(in: &bag)
+        
+        self.$connectionState
+            .filter { $0.isConnected }
+            .delay(for: 1, scheduler: DispatchQueue.main)
+            .sink { [weak self] _ in
+                self?.refresh()
             }.store(in: &bag)
     }
     
