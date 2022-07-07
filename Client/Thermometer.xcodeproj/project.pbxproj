@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE2521EC286ACE8600F55050 /* BLE.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2521EB286ACE8600F55050 /* BLE.swift */; };
+		DE2521EF286ACEA300F55050 /* BLE+CBCentralManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2521EE286ACEA300F55050 /* BLE+CBCentralManagerDelegate.swift */; };
+		DE2521F2286ACEB200F55050 /* BLE+CBPeripheralDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2521F1286ACEB200F55050 /* BLE+CBPeripheralDelegate.swift */; };
+		DE2521F7286AD13700F55050 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2521F6286AD13700F55050 /* Secrets.swift */; };
+		DE2521FA286AD17E00F55050 /* Constants+BLE.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2521F9286AD17E00F55050 /* Constants+BLE.swift */; };
+		DE2521FD286AD1A100F55050 /* Constants+Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2521FC286AD1A100F55050 /* Constants+Network.swift */; };
+		DE252201286ADF0400F55050 /* DispatchQueue+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE252200286ADF0400F55050 /* DispatchQueue+Extensions.swift */; };
+		DE252204286AE0DE00F55050 /* Constants+Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE252203286AE0DE00F55050 /* Constants+Notification.swift */; };
+		DE252207286AE19C00F55050 /* Notification.Name+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE252206286AE19C00F55050 /* Notification.Name+Extensions.swift */; };
+		DE25220A286DB19900F55050 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE252209286DB0D400F55050 /* Network.swift */; };
+		DE3D537D286776DD00CD985D /* RepositoryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3D537C286776D400CD985D /* RepositoryError.swift */; };
+		DE3D53802867774100CD985D /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3D537F2867774100CD985D /* AppEnvironment.swift */; };
+		DE3D5386286855DB00CD985D /* CommonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3D5385286855DB00CD985D /* CommonViewModel.swift */; };
+		DE4339152867189D007B1F60 /* BLEConnectionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4339142867189D007B1F60 /* BLEConnectionState.swift */; };
+		DE433918286718FD007B1F60 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE433917286718FD007B1F60 /* View+Extensions.swift */; };
+		DE43391B286719A6007B1F60 /* ErrorPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE43391A286719A6007B1F60 /* ErrorPopup.swift */; };
+		DE4C9AD128714FEB002E790F /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4C9AD028714FEB002E790F /* Log.swift */; };
+		DE5F83FD28744E410056D084 /* IDResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F83FB28744CC30056D084 /* IDResult.swift */; };
+		DE5F83FE28744E4A0056D084 /* BLECommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F83FC28744DED0056D084 /* BLECommand.swift */; };
+		DE5F84002874805D0056D084 /* BLEError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F83FF2874805D0056D084 /* BLEError.swift */; };
+		DE5F8402287557580056D084 /* Character+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F8401287557580056D084 /* Character+Extensions.swift */; };
+		DE5F840428757A1D0056D084 /* PopupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F840328757A1D0056D084 /* PopupViewModel.swift */; };
+		DE5F840628757B870056D084 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F840528757B870056D084 /* Extensions.swift */; };
+		DE5F840828757F1A0056D084 /* BLECallBackReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F840728757F1A0056D084 /* BLECallBackReceiver.swift */; };
+		DE5F840A28757F340056D084 /* DataContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F840928757F340056D084 /* DataContainer.swift */; };
+		DE5F840C28757F490056D084 /* DataUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F840B28757F490056D084 /* DataUploader.swift */; };
+		DE5F8415287582440056D084 /* Humidity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F8414287582440056D084 /* Humidity.swift */; };
+		DE5F84172875857D0056D084 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F84162875857D0056D084 /* Color+Extensions.swift */; };
+		DE7D50F527C7D402006901BD /* ThermometerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7D50E527C7D400006901BD /* ThermometerApp.swift */; };
+		DE7D50F727C7D402006901BD /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7D50E627C7D400006901BD /* MainView.swift */; };
+		DE7D50F927C7D402006901BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE7D50E727C7D402006901BD /* Assets.xcassets */; };
+		DE8797A42871D1520040328A /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8797A32871D1520040328A /* NetworkError.swift */; };
+		DE8797A62871D1660040328A /* ServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8797A52871D1660040328A /* ServerResponse.swift */; };
+		DE8797A82871D17C0040328A /* ServerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8797A72871D17C0040328A /* ServerError.swift */; };
+		DE8797AC2871D5320040328A /* NetworkContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8797AB2871D5320040328A /* NetworkContainer.swift */; };
+		DE8797AE2872C7630040328A /* TemperatureFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8797AD2872C7630040328A /* TemperatureFormatter.swift */; };
+		DE8797B02872C7750040328A /* TemperatureUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8797AF2872C7750040328A /* TemperatureUnit.swift */; };
+		DE8797B22872C7860040328A /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8797B12872C7860040328A /* Temperature.swift */; };
+		DE8797B42872C7AF0040328A /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8797B32872C7AF0040328A /* DIContainer.swift */; };
+		DE8797B62872C8490040328A /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8797B52872C8490040328A /* HTTPMethod.swift */; };
+		DE8797B82872C8570040328A /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8797B72872C8570040328A /* Typealiases.swift */; };
+		DE8797BA2872CA820040328A /* UserSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8797B92872CA820040328A /* UserSetting.swift */; };
+		DE8797BC2872E3140040328A /* BGTaskRunnable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8797BB2872E3140040328A /* BGTaskRunnable.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DE2521EB286ACE8600F55050 /* BLE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLE.swift; sourceTree = "<group>"; };
+		DE2521EE286ACEA300F55050 /* BLE+CBCentralManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BLE+CBCentralManagerDelegate.swift"; sourceTree = "<group>"; };
+		DE2521F1286ACEB200F55050 /* BLE+CBPeripheralDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BLE+CBPeripheralDelegate.swift"; sourceTree = "<group>"; };
+		DE2521F6286AD13700F55050 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		DE2521F9286AD17E00F55050 /* Constants+BLE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+BLE.swift"; sourceTree = "<group>"; };
+		DE2521FC286AD1A100F55050 /* Constants+Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+Network.swift"; sourceTree = "<group>"; };
+		DE252200286ADF0400F55050 /* DispatchQueue+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Extensions.swift"; sourceTree = "<group>"; };
+		DE252203286AE0DE00F55050 /* Constants+Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+Notification.swift"; sourceTree = "<group>"; };
+		DE252206286AE19C00F55050 /* Notification.Name+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification.Name+Extensions.swift"; sourceTree = "<group>"; };
+		DE252209286DB0D400F55050 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		DE3D537C286776D400CD985D /* RepositoryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryError.swift; sourceTree = "<group>"; };
+		DE3D537F2867774100CD985D /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		DE3D5385286855DB00CD985D /* CommonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViewModel.swift; sourceTree = "<group>"; };
+		DE4339142867189D007B1F60 /* BLEConnectionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEConnectionState.swift; sourceTree = "<group>"; };
+		DE433917286718FD007B1F60 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		DE43391A286719A6007B1F60 /* ErrorPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorPopup.swift; sourceTree = "<group>"; };
+		DE4C9AD028714FEB002E790F /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		DE5F83FB28744CC30056D084 /* IDResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDResult.swift; sourceTree = "<group>"; };
+		DE5F83FC28744DED0056D084 /* BLECommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLECommand.swift; sourceTree = "<group>"; };
+		DE5F83FF2874805D0056D084 /* BLEError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEError.swift; sourceTree = "<group>"; };
+		DE5F8401287557580056D084 /* Character+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Character+Extensions.swift"; sourceTree = "<group>"; };
+		DE5F840328757A1D0056D084 /* PopupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewModel.swift; sourceTree = "<group>"; };
+		DE5F840528757B870056D084 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		DE5F840728757F1A0056D084 /* BLECallBackReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLECallBackReceiver.swift; sourceTree = "<group>"; };
+		DE5F840928757F340056D084 /* DataContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataContainer.swift; sourceTree = "<group>"; };
+		DE5F840B28757F490056D084 /* DataUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUploader.swift; sourceTree = "<group>"; };
+		DE5F8414287582440056D084 /* Humidity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Humidity.swift; sourceTree = "<group>"; };
+		DE5F84162875857D0056D084 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		DE7D50E527C7D400006901BD /* ThermometerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThermometerApp.swift; sourceTree = "<group>"; };
+		DE7D50E627C7D400006901BD /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		DE7D50E727C7D402006901BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE7D50EC27C7D402006901BD /* Thermometer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thermometer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE8797A32871D1520040328A /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		DE8797A52871D1660040328A /* ServerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerResponse.swift; sourceTree = "<group>"; };
+		DE8797A72871D17C0040328A /* ServerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerError.swift; sourceTree = "<group>"; };
+		DE8797AB2871D5320040328A /* NetworkContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkContainer.swift; sourceTree = "<group>"; };
+		DE8797AD2872C7630040328A /* TemperatureFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureFormatter.swift; sourceTree = "<group>"; };
+		DE8797AF2872C7750040328A /* TemperatureUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureUnit.swift; sourceTree = "<group>"; };
+		DE8797B12872C7860040328A /* Temperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temperature.swift; sourceTree = "<group>"; };
+		DE8797B32872C7AF0040328A /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		DE8797B52872C8490040328A /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		DE8797B72872C8570040328A /* Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealiases.swift; sourceTree = "<group>"; };
+		DE8797B92872CA820040328A /* UserSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSetting.swift; sourceTree = "<group>"; };
+		DE8797BB2872E3140040328A /* BGTaskRunnable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGTaskRunnable.swift; sourceTree = "<group>"; };
+		DEEFBCC327C9DD3300C02A83 /* Thermometer--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Thermometer--iOS--Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE7D50E927C7D402006901BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DE2521EA286ACE0E00F55050 /* BLE */ = {
+			isa = PBXGroup;
+			children = (
+				DE2521EB286ACE8600F55050 /* BLE.swift */,
+				DE2521EE286ACEA300F55050 /* BLE+CBCentralManagerDelegate.swift */,
+				DE2521F1286ACEB200F55050 /* BLE+CBPeripheralDelegate.swift */,
+			);
+			path = BLE;
+			sourceTree = "<group>";
+		};
+		DE2521F4286AD11B00F55050 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				DE2521F6286AD13700F55050 /* Secrets.swift */,
+				DE2521F9286AD17E00F55050 /* Constants+BLE.swift */,
+				DE2521FC286AD1A100F55050 /* Constants+Network.swift */,
+				DE252203286AE0DE00F55050 /* Constants+Notification.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		DE2521FF286ADEF100F55050 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DE5F840528757B870056D084 /* Extensions.swift */,
+				DE8797B72872C8570040328A /* Typealiases.swift */,
+				DE433917286718FD007B1F60 /* View+Extensions.swift */,
+				DE252200286ADF0400F55050 /* DispatchQueue+Extensions.swift */,
+				DE252206286AE19C00F55050 /* Notification.Name+Extensions.swift */,
+				DE5F8401287557580056D084 /* Character+Extensions.swift */,
+				DE5F84162875857D0056D084 /* Color+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DE5F840D287580580056D084 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DE8797B92872CA820040328A /* UserSetting.swift */,
+				DE8797B12872C7860040328A /* Temperature.swift */,
+				DE5F8414287582440056D084 /* Humidity.swift */,
+				DE8797AF2872C7750040328A /* TemperatureUnit.swift */,
+				DE5F8411287580D50056D084 /* BLE */,
+				DE5F8410287580B80056D084 /* Errors */,
+				DE5F840F287580870056D084 /* Network */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DE5F840E287580640056D084 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DE7D50E627C7D400006901BD /* MainView.swift */,
+				DE3D5385286855DB00CD985D /* CommonViewModel.swift */,
+				DE5F840328757A1D0056D084 /* PopupViewModel.swift */,
+				DE43391A286719A6007B1F60 /* ErrorPopup.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DE5F840F287580870056D084 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DE5F83FB28744CC30056D084 /* IDResult.swift */,
+				DE8797B52872C8490040328A /* HTTPMethod.swift */,
+				DE8797A52871D1660040328A /* ServerResponse.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DE5F8410287580B80056D084 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				DE3D537C286776D400CD985D /* RepositoryError.swift */,
+				DE8797A32871D1520040328A /* NetworkError.swift */,
+				DE8797A72871D17C0040328A /* ServerError.swift */,
+				DE5F83FF2874805D0056D084 /* BLEError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		DE5F8411287580D50056D084 /* BLE */ = {
+			isa = PBXGroup;
+			children = (
+				DE5F83FC28744DED0056D084 /* BLECommand.swift */,
+				DE5F840728757F1A0056D084 /* BLECallBackReceiver.swift */,
+				DE8797BB2872E3140040328A /* BGTaskRunnable.swift */,
+				DE4339142867189D007B1F60 /* BLEConnectionState.swift */,
+			);
+			path = BLE;
+			sourceTree = "<group>";
+		};
+		DE5F84122875810A0056D084 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DE8797B32872C7AF0040328A /* DIContainer.swift */,
+				DE3D537F2867774100CD985D /* AppEnvironment.swift */,
+				DE8797AD2872C7630040328A /* TemperatureFormatter.swift */,
+				DE4C9AD028714FEB002E790F /* Log.swift */,
+				DE5F84132875812A0056D084 /* Network */,
+				DE2521EA286ACE0E00F55050 /* BLE */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DE5F84132875812A0056D084 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DE252209286DB0D400F55050 /* Network.swift */,
+				DE8797AB2871D5320040328A /* NetworkContainer.swift */,
+				DE5F840B28757F490056D084 /* DataUploader.swift */,
+				DE5F840928757F340056D084 /* DataContainer.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DE7D50DF27C7D400006901BD = {
+			isa = PBXGroup;
+			children = (
+				DE7D50E527C7D400006901BD /* ThermometerApp.swift */,
+				DEEFBCC327C9DD3300C02A83 /* Thermometer--iOS--Info.plist */,
+				DE7D50E727C7D402006901BD /* Assets.xcassets */,
+				DE5F840E287580640056D084 /* Views */,
+				DE5F840D287580580056D084 /* Models */,
+				DE5F84122875810A0056D084 /* Services */,
+				DE2521FF286ADEF100F55050 /* Extensions */,
+				DE2521F4286AD11B00F55050 /* Constants */,
+				DE7D50ED27C7D402006901BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DE7D50ED27C7D402006901BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE7D50EC27C7D402006901BD /* Thermometer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE7D50EB27C7D402006901BD /* Thermometer (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE7D50FD27C7D402006901BD /* Build configuration list for PBXNativeTarget "Thermometer (iOS)" */;
+			buildPhases = (
+				DE7D50E827C7D402006901BD /* Sources */,
+				DE7D50E927C7D402006901BD /* Frameworks */,
+				DE7D50EA27C7D402006901BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Thermometer (iOS)";
+			productName = "Thermometer (iOS)";
+			productReference = DE7D50EC27C7D402006901BD /* Thermometer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE7D50E027C7D400006901BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					DE7D50EB27C7D402006901BD = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = DE7D50E327C7D400006901BD /* Build configuration list for PBXProject "Thermometer" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DE7D50DF27C7D400006901BD;
+			productRefGroup = DE7D50ED27C7D402006901BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE7D50EB27C7D402006901BD /* Thermometer (iOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE7D50EA27C7D402006901BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE7D50F927C7D402006901BD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE7D50E827C7D402006901BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE5F83FD28744E410056D084 /* IDResult.swift in Sources */,
+				DE7D50F727C7D402006901BD /* MainView.swift in Sources */,
+				DE8797B22872C7860040328A /* Temperature.swift in Sources */,
+				DE8797AC2871D5320040328A /* NetworkContainer.swift in Sources */,
+				DE43391B286719A6007B1F60 /* ErrorPopup.swift in Sources */,
+				DE2521EF286ACEA300F55050 /* BLE+CBCentralManagerDelegate.swift in Sources */,
+				DE5F840828757F1A0056D084 /* BLECallBackReceiver.swift in Sources */,
+				DE5F840628757B870056D084 /* Extensions.swift in Sources */,
+				DE8797BA2872CA820040328A /* UserSetting.swift in Sources */,
+				DE252207286AE19C00F55050 /* Notification.Name+Extensions.swift in Sources */,
+				DE5F840A28757F340056D084 /* DataContainer.swift in Sources */,
+				DE5F84172875857D0056D084 /* Color+Extensions.swift in Sources */,
+				DE5F8415287582440056D084 /* Humidity.swift in Sources */,
+				DE8797B02872C7750040328A /* TemperatureUnit.swift in Sources */,
+				DE5F840428757A1D0056D084 /* PopupViewModel.swift in Sources */,
+				DE8797A82871D17C0040328A /* ServerError.swift in Sources */,
+				DE252204286AE0DE00F55050 /* Constants+Notification.swift in Sources */,
+				DE2521FD286AD1A100F55050 /* Constants+Network.swift in Sources */,
+				DE4339152867189D007B1F60 /* BLEConnectionState.swift in Sources */,
+				DE4C9AD128714FEB002E790F /* Log.swift in Sources */,
+				DE8797AE2872C7630040328A /* TemperatureFormatter.swift in Sources */,
+				DE8797B82872C8570040328A /* Typealiases.swift in Sources */,
+				DE8797A42871D1520040328A /* NetworkError.swift in Sources */,
+				DE7D50F527C7D402006901BD /* ThermometerApp.swift in Sources */,
+				DE252201286ADF0400F55050 /* DispatchQueue+Extensions.swift in Sources */,
+				DE25220A286DB19900F55050 /* Network.swift in Sources */,
+				DE5F8402287557580056D084 /* Character+Extensions.swift in Sources */,
+				DE433918286718FD007B1F60 /* View+Extensions.swift in Sources */,
+				DE8797B62872C8490040328A /* HTTPMethod.swift in Sources */,
+				DE3D53802867774100CD985D /* AppEnvironment.swift in Sources */,
+				DE5F83FE28744E4A0056D084 /* BLECommand.swift in Sources */,
+				DE5F84002874805D0056D084 /* BLEError.swift in Sources */,
+				DE8797BC2872E3140040328A /* BGTaskRunnable.swift in Sources */,
+				DE5F840C28757F490056D084 /* DataUploader.swift in Sources */,
+				DE2521EC286ACE8600F55050 /* BLE.swift in Sources */,
+				DE8797B42872C7AF0040328A /* DIContainer.swift in Sources */,
+				DE2521FA286AD17E00F55050 /* Constants+BLE.swift in Sources */,
+				DE2521F7286AD13700F55050 /* Secrets.swift in Sources */,
+				DE2521F2286ACEB200F55050 /* BLE+CBPeripheralDelegate.swift in Sources */,
+				DE3D537D286776DD00CD985D /* RepositoryError.swift in Sources */,
+				DE8797A62871D1660040328A /* ServerResponse.swift in Sources */,
+				DE3D5386286855DB00CD985D /* CommonViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DE7D50FB27C7D402006901BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DE7D50FC27C7D402006901BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		DE7D50FE27C7D402006901BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DQU9BJGSVQ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Thermometer--iOS--Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = in.co.coincoin.Thermometer;
+				PRODUCT_NAME = Thermometer;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DE7D50FF27C7D402006901BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DQU9BJGSVQ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Thermometer--iOS--Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = in.co.coincoin.Thermometer;
+				PRODUCT_NAME = Thermometer;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE7D50E327C7D400006901BD /* Build configuration list for PBXProject "Thermometer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE7D50FB27C7D402006901BD /* Debug */,
+				DE7D50FC27C7D402006901BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE7D50FD27C7D402006901BD /* Build configuration list for PBXNativeTarget "Thermometer (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE7D50FE27C7D402006901BD /* Debug */,
+				DE7D50FF27C7D402006901BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE7D50E027C7D400006901BD /* Project object */;
+}
