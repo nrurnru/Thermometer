@@ -2,7 +2,7 @@
 #include "PlainProtocol.h"
 #include "blunoAccessory.h"
 
-#define minute3 180 * 1000
+#define minute3 180UL * 1000UL
 
 PlainProtocol myBLUNO(Serial, 115200);
 blunoAccessory myAccessory;
@@ -22,9 +22,11 @@ void loop()
 {
   if (myBLUNO.available()) {
     if (myBLUNO.equals("TEMP")) {
+      temperature = myAccessory.readTemperature();
       myBLUNO.write("TEMP", temperature);
     }
     else if (myBLUNO.equals("HUMID")) {
+      humidity = myAccessory.readHumidity();
       myBLUNO.write("HUMID", humidity);
     }
     else {
